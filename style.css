@@ -299,13 +299,17 @@ header {
 }
 
 .about-text {
-    flex: 1;
+    flex: 4;
 }
 
 .about-text h3 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20rem;
 }
 
 .about-text p {
