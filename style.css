@@ -106,7 +106,7 @@ body {
     color: var(--text-color);
     background-color: var(--light-bg);
 }
-h2, h3{
+h1, h2, h3{
     font-family: 'Playfair Display', serif; 
      font-weight: 700; 
 }
