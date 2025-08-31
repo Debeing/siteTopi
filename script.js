@@ -1,4 +1,4 @@
-// Script principal pour le portfolio de Constantin Lao
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Variables
