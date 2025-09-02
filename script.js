@@ -122,32 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Filtrage des projets
-    if (filterBtns.length > 0 && projectCards.length > 0) {
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Retirer la classe active de tous les boutons
-                filterBtns.forEach(btn => btn.classList.remove('active'));
-                // Ajouter la classe active au bouton cliqué
-                this.classList.add('active');
-                
-                const filterValue = this.getAttribute('data-filter');
-                
-                projectCards.forEach(card => {
-                    if (filterValue === 'all') {
-                        card.style.display = 'block';
-                    } else {
-                        if (card.getAttribute('data-category') === filterValue) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    }
-                });
-            });
-        });
-    }
-    
     // Smooth scroll pour les liens d'ancrage
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -180,23 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             
             // Le formulaire sera soumis à Formspree
-        });
-    }
-    
-    // Validation du formulaire de newsletter
-    const newsletterForm = document.querySelector('.newsletter-form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = this.querySelector('input[type="email"]').value;
-            
-            if (email) {
-                alert('Merci de vous être abonné à ma newsletter !');
-                newsletterForm.reset();
-            } else {
-                alert('Veuillez entrer une adresse email valide.');
-            }
         });
     }
     
