@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('load', function() {
         setTimeout(function() {
             preloader.classList.add('fade-out');
-        }, 500);
+        }, 300);
     });
     
     // Vérifier si un thème est stocké dans localStorage

@@ -1,8 +1,8 @@
 
 /* Variables globales */
 :root {
-    --primary-color: #fff;
-    --secondary-color: #1e40af;
+    --primary-color: #3b82f6;
+    --secondary-color: #3b82f6;
     --accent-color: #3b82f6;
     --text-color: #333;
     --light-text: #333;
@@ -106,14 +106,15 @@ body {
     color: var(--text-color);
     background-color: var(--light-bg);
 }
-h1, h2, h3{
+ h2, h3{
     font-family: 'Playfair Display', serif; 
      font-weight: 700; 
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 90%;
+    height:  400px;
+    margin-top: -7 0px;
 }
 
 a {
@@ -310,12 +311,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20rem;
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    font-weight: 600;
 }
 
 .personal-info {
@@ -898,9 +899,9 @@ footer {
 
     .nav-bar {
         position: fixed;
-        top: 83px;
+        top: 70px;
         left: -100%;
-        width: 30%;
+        width: 35%;
         height: calc(100vh - 70px);
         background: linear-gradient(135deg, var(--gray-bg) 0%, #037bf3 100%);
         transition: var(--transition);
